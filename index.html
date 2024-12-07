@@ -1,0 +1,211 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Saisri Kollapaneni</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.7.1/css/all.min.css" integrity="sha512-5Hs3dF2AEPkpNAR7UiOHba+lRSJNeM2ECkwxUIxC1Q/FLycGTbNapWXB4tP889k5T5Ju8fs4b1P5z/iB4nMfSQ==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!--<img src="images/logo.png" class="logo">-->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <li><a href="#services">Certifications</a></li>
+                <li><a href="#portfolio">Projects</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <h1>Hi, I'm <span>Saisri</span>Kollapaneni</h1>
+            <p>Full Stack Developer @ Walmart</p>
+            <div class="social-icons">
+                <a href="https://www.linkedin.com/in/saisri-k/"><i class="fab fa-linkedin"></i></a>
+                <a href="https://github.com/SaisriKollapaneni"><i class="fab fa-github"></i></a>
+             </div>
+            
+            
+
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/MyDp.jpeg">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p> I’m a Full Stack Developer at Walmart with expertise in HTML5, CSS3, Next.js, TypeScript, Node.js, and Python. A problem-solver and tech enthusiast. Beyond tech, I’m fascinated by human psychology, criminology, and enjoy watching history documentaries. Fun fact: I can name more historical battles than JavaScript frameworks!
+        </p>
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Programming Languages</span><br>JavaScript/TypeScript, Java, Python, C, C++</li>
+                        <li><span>Frontend development</span><br>ReactJS, Vue.js, Redux, Axios, JavaScript,
+                            TypeScript, HTML5, CSS3, AngularJS,
+                            NodeJS, Saga, Thunk, Webpack, Ajax,
+                            Responsive Web Design (RWD), Bootstrap.</li>
+                        <li><span>Backend development</span><br>Node.js (JS/TS), python, Express.js, NestJS,
+                            Django, Flask</li>
+                        <li><span>APIs and Data Management</span><br>GraphQL, gRPC, JWT( authentication),
+                            Swagger RESTful APIs</li>
+                        <li><span>Cloud and Version control sys:</span><br>AWS (CloudWatch, IAM, EC2, S3, ELB),
+                            Docker, Git</li>
+                        <li><span>Database Technologies and Query
+                                Languages</span><br>SOQL, SOSL, MySQL, Firebase, NoSQL,
+                                MongoDB</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>2024 - Current</span><br>Full Stack Developer at Walmart<br/>Sunnyvale, CA</li>
+                        <li><span>2023 - 2024</span><br>Python Developer at George Mason University<br/>Fairfax, VA</li>
+                        <li><span>2021 - 2022</span><br>Salesforce Developer at Cognizant<br/>Kolkata, India</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>2022 - 2024</span><br>Master's in Computer Science (3.8/4.0) <br/> George Mason University</li>
+                        <li><span>2017 - 2021</span><br>BTech in Computer Science (8.6/10.0) <br/> Jawaharlal Nehru Technological University, Anantapur</li>
+                        
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Certifications</h1>
+        <div  id="certifications">
+            <ul>
+                <li><span>Amazon Web Services</span><br>AWS Certified Cloud Practitioner</li><br>
+                <li><span>Salesforce</span><br>Salesforce Certified Platform Developer 1</li><br>
+                <li><span>DeepLearning.AI</span><br>Machine Learning Specialization<br/>
+                    Neural Networks and Deep Learning</li>
+
+            </ul>
+        </div>              
+        
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">My Work</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/work-1.png">
+                <div class="layer">
+                    <h3>WanderHive</h3>
+                    <p>A social media website using React, Tailwind,
+                        Next.Js, HTML, and CSS for travel enthusiasts.
+                        Incorporated offline mode using service
+                        workers for uninterrupted browsing.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/work-2.png">
+                <div class="layer">
+                    <h3>Money Tracker App</h3>
+                    <p>A simple and intuitive application to manage your personal finances. Track your income and expenses, categorize transactions, and view your current balance at a glance. With an easy-to-use interface, you can add, view, and filter transactions effortlessly, helping you stay on top of your spending and saving habits. Perfect for anyone looking to manage their money smarter!</p>  <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            
+        </div>
+      
+    </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> kollapanenisaisri@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> 7033400484</p>
+                
+                <a href="images/SaisriKollapaneniResume.pdf" download class="btn btn2">Download Resume</a>
+            </div>
+            <div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>
+</body>
+</html>
